@@ -3,38 +3,72 @@
     <head>
         <meta charset="UTF-8">
         <style>
-            .centered {
-                text-align: center;
+
+            html *{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
             }
 
-            .left {
-                text-align: left;
+            html,body{
+                height:100%;
+                display:flex;
+                flex-direction:column;
             }
 
-            .right {
-                text-align right;
+            .header {
+                display:flex;
+                flex-direction:row;
+                justify-content:center;
+                align-items:center;
             }
 
-            .font {
-                font-family: Verdana;
+            .header-image{
+                flex-basis:5%;
             }
 
-            body{
-                background-image: url(./static/imgs/background.jpg);
-                background-repeat: no-repeat;
-                background-attachment: fixed;
+            .header-title{
+                flex-basis:50%;
             }
 
-            .bandname {
-                background-color: red;
-                color: black;
-                font-size 80px;
+            .footer{
+                display:flex;
+                flex-direction:row;
+                justify-content:center;
+                align-items:end;
+                flex-grow:1;
             }
+
         </style>
     </head>
-    <body>
-        <div class="bandname">
-            <h1 id="name" class="centered font">Racecars</h1>
+    <body style="background-color:black">
+        <div class="header">
+            <img class="header-image" src="./static/imgs/NASCAR1.png" width="145vh" height="100vh" >
+            <h1 class="header-title" style="font-size: 450%; text-align: center; color:#ff0000; font-weight:bold">Race<span style="color: #0000FF">cars</span></h1>
+            <img class="header-image" src="./static/imgs/NASCAR2.png" width="156vh" height="100vh" >
+
         </div>
+        <table style="width: 50%; height: 70%; margin-left: auto; margin-right: auto; text-align:center; background-color: #CBCBCB;" border="15">
+            <tbody>
+                <tr>
+                    <td>&nbsp;<font size="6vw"><a href="https://racecars.bandcamp.com/releases">Bandcamp</a></font></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;<font size="6vw" color="red"><a href="https://open.spotify.com/artist/4TLLzD0CRpxXUUtSIcM1MY">Spotify</a></font> </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;<font size="6vw"><a href="https://music.apple.com/us/artist/racecars/1633904237">Apple Music</a></font></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;<font size="6vw"><a href="https://www.instagram.com/racecarsband/">Instagram</a></font></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;<font size="6vw"><a href="https://twitter.com/racecarsband">Twitter</a></font></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="footer">
+            <img src="./static/imgs/flame.gif" width="100%">
+        </div>
+
+
     </body>
 </html>

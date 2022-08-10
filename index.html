@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        
         <meta charset="UTF-8">
         <style>
 
@@ -41,7 +42,8 @@
                 display:flex;
                 flex-direction:row;
                 align-items:center;
-                flex-grow:4;
+                display: block;
+                flex-grow:6;
             }
 
             .container{
@@ -57,15 +59,26 @@
             flex-grow:1;
 			}
 
+            .button{
+                /*align-items:;*/
+                width:30%;
+                height:8%;
+                font-size:125%;
+                text-align:center;
+                margin:0 auto;
+                display:block;
+            }
+
         </style>
     </head>
     <body style="background-color:black">
-        <div class="header">
-            <img class="header-image" src="./static/imgs/NASCAR1.png" width="196vh" height="135vh" >
-            <h1 class="header-title" style="font-size: 550%; text-align: center; color:#ff0000; font-weight:bold">Race<span style="color: #0000FF">cars</span></h1>
-            <img class="header-image" src="./static/imgs/NASCAR2.png" width="211vh" height="135vh" >
 
+        <div class="header">
+            <img class="header-image" src="./static/imgs/NASCAR1.png" width="166vh" height="115vh" >
+            <h1 class="header-title" style="font-size: 475%; text-align: center; color:#ff0000; font-weight:bold">Race<span style="color: #0000FF">cars</span></h1>
+            <img class="header-image" src="./static/imgs/NASCAR2.png" width="179vh" height="115vh" >
         </div>
+
         <div class="vertical">
             <table style="width: 60%; height: 70%; margin-left: auto; margin-right: auto; text-align:center; background-color: #CBCBCB;" border="15">
                 <tbody>
@@ -86,7 +99,12 @@
                     </tr>
                 </tbody>
             </table>
+
+            <button stlye="font-size:400%" onclick="setAudioState()" type="button" class="button">Play/Stop</button>
+
         </div>
+
+            
 
         
 
@@ -111,10 +129,16 @@
                 <div>
                     <img src="./static/imgs/skull.gif" height="150vw" width="150vw">
                 </div>
-                
             </div>
+
         </div>
 
+        <audio id="myAudio">
+            <source src="./audio/nascardad.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+        <script src="myscript.js"></script>
 
     </body>
 </html>
